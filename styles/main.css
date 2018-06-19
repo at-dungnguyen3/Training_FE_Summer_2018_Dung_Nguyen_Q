@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  width: 100vp;
+  height: 90vh;
+  background-color: bisque;
+}
+
+[class*="block-"] {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border: 1px solid red;
+  text-transform: uppercase;
+}
+
+.block-1 {
+  background-color: white;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+.block-2 {
+  background-color: violet;
+  top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.block-3 {
+  background-color: turquoise;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  text-align: right;
+}
+
+.block-4 {
+  background-color: springgreen;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.block-5 {
+  background-color: salmon;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-6 {
+  background-color: pink;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.block-7 {
+  background-color: orange;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.block-8 {
+  background-color: mediumturquoise;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.block-9 {
+  background-color: black;
+  color: white;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.block-1 p::first-letter {
+  font-weight: bold;
+}
+
+.block-2 p:active {
+  font-size: 30px;
+}
+
+.block-2 p::after {
+  content: " - Click me!"
+}
+
+.block-3 p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.block-4 p {
+  font-style: italic;
+}
+
+.block-5>span {
+  color: red;
+}
+
+.block-5 span {
+  font-size: 20px;
+}
+
+.block-6 p:first-child {
+  color:red;
+}
+
+.block-7 p {
+  text-shadow: 2px 2px;
+}
+
+.block-8 p:hover {
+  text-decoration: underline;
+}
+
+.block-8 p::before {
+  content: "Hover me! - "
+}
