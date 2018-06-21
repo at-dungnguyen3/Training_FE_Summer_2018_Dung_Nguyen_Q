@@ -5,7 +5,7 @@ a {
 }
 
 a:hover {
-  color: #ffa800;
+  color: rgba(98, 198, 248, 1);
 }
 
 :root {
@@ -165,7 +165,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #fa9601;
+  color: rgba(98, 198, 248, 1);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
