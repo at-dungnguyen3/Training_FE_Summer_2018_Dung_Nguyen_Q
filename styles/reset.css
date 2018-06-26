@@ -1,353 +1,51 @@
-/* Reset
--------------------------------------------------------------- */
-a {
-  color: #333333;
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-a:hover {
-  color: rgba(98, 198, 248, 1);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-:root {
-  --background-color: #f5f6f6;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-html {
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 body {
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+	line-height: 1;
 }
-
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code,
-dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video  { 
-  font-family: inherit; 
-  font-size: 100%; 
-  font-weight: inherit; 
-  font-style: inherit; 
-  vertical-align: baseline; 
-  margin: 0; 
-  padding: 0; 
-  border: 0; 
-  outline: 0;
-  background: transparent;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-  display: block;
-}
-                          
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
-
-blockquote, q { 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-figure {
-  margin: 0;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-:focus {
-  outline: 0;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-table { 
-  border-collapse: collapse; 
-  border-spacing: 0;
-}
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-legend {
-  white-space: normal;
-}
-
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  max-width: 100%;
-  vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-button,
-input {
-  line-height: normal;
-}
-
-input,
-textarea {
-  background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  line-height: 1;
-  cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-  border: none;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  padding: 0; /* Addresses excess padding in IE8/9 */
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
-}
-
-input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-  border: 0;
-  padding: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Repeatable Patterns
--------------------------------------------------------------- */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font: 14px/22px "MyriadPro Regular", sans-serif;
-  font-weight: 400;
-  background-color: var(--background-color);		
-  color: #333333;
-}
-
-a {		
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover,
-a:focus {
-  color: rgba(98, 198, 248, 1);
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-ul, ol {
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;		
-}
-
-.img-left {
-  margin: -10px 50px 0 0 !important;
-  float: left;
-}
-
-.img-right {
-  margin: 0 0 0 50px !important;
-  float: right;
-}
-
-b, strong {
-  font-weight: 900;
-}
-
-.entry-page p {
-  margin-bottom: 25px;
-}
-
-/* h1 { font: 48px/50px "MyriadPro Regular", sans-serif;}
-h2 { font: 40px/42px "MyriadPro Regular", sans-serif;}
-h3 { font: 36px/38px "MyriadPro Regular", sans-serif;}
-h4 { font: 30px/32px "MyriadPro Regular", sans-serif;}
-h5 { font: 24px/26px "MyriadPro Regular", sans-serif;}
-h6 { font: 18px/20px "MyriadPro Regular", sans-serif;} */
-
-/*h1, h2,h3, h4, h5, h6 {
-  color: #333946;
-  font-weight: 600;
-}*/
-
-button {
-  border: none;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {		
-  font-size: 14px;
-  font-weight: 400;   
-  color: #d7d7d7;
-  background-color: transparent;
-  border: 1px solid #d7d7d7;
-  text-transform: uppercase;   
-  padding: 10px;
-  /*letter-spacing: 2.8px;*/
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-  font-family: "MyriadPro Regular", sans-serif;	
-  width: 100%;	
-  border: 1px solid #d7d7d7;
-  background-color: transparent;		
-  height: 40px;
-  margin-bottom: 15px;
-  padding: 5px 22px;
-  border-radius: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus {
-  border: 1px solid #0ec0ee;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-textarea {
-  width: 100%;
-  height: 140px;
-  padding: 15px 24px;
-}
-
-input[type="checkbox"] {
-  display: inline;
-}
-
-textarea:-moz-placeholder,
-textarea::-moz-placeholder,
-input:-moz-placeholder,
-input::-moz-placeholder {		
-  color: #777777;
-  opacity: 1;
-}
-
-input:-ms-input-placeholder {
-  color: #777777;
-}
-
-textarea::-webkit-input-placeholder,
-input::-webkit-input-placeholder {
-  color: #777777;
-  opacity: 1;
-}
-
-/* bootstrap resetting elements */
-.btn {
-  background-image: none;
-}
-
-textarea, 
-input[type="text"],
-input[type="submit"],
-input[type="password"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="date"], 
-input[type="month"], 
-input[type="time"], 
-input[type="week"], 
-input[type="number"], 
-input[type="email"], 
-input[type="url"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="color"], 
-.uneditable-input,
-.dropdown-menu,
-.navbar .nav > .active > a, 
-.navbar .nav > .active > a:hover, 
-.navbar .nav > .active > a:focus {
-  -webkit-appearance: none;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  color: #333333;
+a {
+	text-decoration: none;
 }

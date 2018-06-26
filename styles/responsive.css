@@ -1,59 +1,65 @@
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .wrapper {
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .container {
     max-width: 960px;
   }
 
   .breadcrumbs-item {
     padding: 60px 0;
   }
-  
-  .container {
-    margin-top: 50px;
-  }
 
   .form-input input {
     font-size: 12px;
   }
-
-  .sidebar-form h3::after {
-    width: 35%;
-  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .wrapper {
+@media only screen and (max-width: 1023px) {
+  .container {
     max-width: 720px;
   }
   
-  .logo img {
-    width: 60px;
-  }
-
-  .logo-text {
-    position: absolute;
-    top: 50%;
-    left: 85px;
-    transform: translateY(-50%)
-  }
-
   h1 {
     font-size: 18px;
   }
 
-  .logo-text span {
+  .logo-context span {
     font-size: 14px;
   }
   
-  .phone-number {
+  .header-contact {
     font-size: 12px;
   }
 
-  .phone-number span {
+  .header-contact span {
     font-size: 16px;
   }
 
-  .social-item {
-    padding: 15px 0 15px 5px;
+  .toggle-main-menu {
+    display: inline-block;
+    padding: 19px 10px;
+    border: 0;
+    background-color: #fff;
+    color: rgba(142, 142, 142, 1);
+    text-transform: uppercase;
+  }
+
+  .toggle-main-menu:hover {
+    background-color: rgba(98, 198, 248, 1);
+    color: #fff;
+    transition: all .4s;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 30px;
   }
 
   .breadcrumbs-item {
@@ -64,150 +70,60 @@
     display: none;
   }
 
-  .nav-bar-responsive {
-    display: inline-block;
-    padding: 15px 0;
-    color: rgba(142, 142, 142, 1);
-  }
-
-  .nav-bar-responsive p:hover,
-  .nav-bar-responsive p:focus {
-    color: rgba(98, 198, 248, 1);
-  }
-
-  .container {
-    margin-top: 30px;
-  }
-
   .sidebar-left {
     width: calc(100%/3);
   }
 
-  .content-right {
-    width: calc(100% - 100%/3);
+  .sidebar-form h3::after {
+    width: 25%;
   }
 
-  .sidebar-category h3{
-    padding: 15px 10px 15px 15px;
+  .main-content {
+    width: calc(100% - 100%/3);
   }
 
   .form-input input {
     font-size: 12px;
   }
 
-  .sidebar-form h3::after {
-    width: 35%;
-  }
-
   .service-item {
     width: calc(100%/2);
   }
-
-  .page-footer {
-    margin-top: 10px;
-  }
-
-  .information-list {
-    padding: 25px 0;
-  }  
-
-  .footer-copyright {
-    padding: 10px 0;
-  }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .wrapper {
+
+@media only screen and (max-width: 767px) {
+  .container {
     max-width: 450px;
   }
-  
-  .logo img {
-    width: 60px;
-  }
 
-  .logo-text {
-    position: absolute;
-    top: 50%;
-    left: 85px;
-    transform: translateY(-50%)
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  .logo-text span {
-    font-size: 14px;
-  }
-  
-  .logo {
+  .header-contact {
     float: none;
-    display: block;
-    position: relative;
-  }
-
-  .phone-number,
-  .menu-list,
-  .sidebar-left,
-  .information-item:last-child {
-    display: none;
   }
 
   .social-item {
     padding: 15px 0 15px 5px;
   }
 
-  .breadcrumbs-item {
-    padding: 40px 0;
+  .sidebar-left {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .nav-bar-responsive {
-    display: inline-block;
-    padding: 15px 0;
-    color: rgba(142, 142, 142, 1);
+  .sidebar-categories {
+    margin-bottom: 10px;
   }
 
-  .container {
-    margin-top: 0;
+  .category-list {
+    display: none;
   }
 
-  .content-right {
+  .main-content {
     width: 100%;
   }
 
   .service-item {
-    width: calc(100%/2);
-    padding: 0 5px 10px;
-  }
-
-  .sidebar-responsive {
-    display: block;
-  }
-  
-  .category-dropdown {
-    display: inline-block;
-    padding: 10px 5px;
-  }
-
-  .category-dropdown a{
-    color: rgba(142, 142, 142, 1);
-  }
-
-  .information-item {
-    width: calc(100%/2);
-  }
-
-  .information-list {
-    padding: 20px 0;
-  }
-
-  .sub-menu-list {
-    padding-top: 10px;
-  }
-
-  .footer-copyright>p,
-  .footer-copyright p+p {
-    float: none;
-    text-align: center;
+    width: 100%;
+    padding: 0 0 10px 0;
   }
 }
 
