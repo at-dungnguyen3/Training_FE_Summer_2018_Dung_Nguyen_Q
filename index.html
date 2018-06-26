@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Day1</title>
+  <script src="javascripts/main.js" type="text/javascript" ></script>
+  <style>
+    .content {
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="header-title">Javascript Day1 Exercise</h1>
+  </header>
+  <main class="page-main">
+    <div class="content">
+      <h2>Sự khác nhau giữa undefined và null</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>undefined</th>
+            <th>null</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>undefined</strong> là kiểu của biến chưa được gán giá trị</td>
+            <td><strong>null</strong> là một giá trị gán đại diện cho biến không có giá trị</td>
+          </tr>
+          <tr>
+            <td>var x;</td>
+            <td>var x = null;</td>
+          </tr>
+          <tr>
+            <td>alert(x); // undefined</td>
+            <td>alert(x); // null</td>
+          </tr>
+          <tr>
+            <td>alert(typeof x); // undefined</td>
+            <td>alert(typeof x); // object</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content">
+      <h2>Use strict là gì? Ưu và nhược điểm của use strict</h2>
+      <p>Đoạn text `"use strict"` được sử dụng để bật chế độ Strict Mode trong code Js.</p>
+      <p>Strict được tạo ra nhằm ngăn chặn sử dụng và throw errors khi người dùng thực hiện xử lý unsafe hay những xử lý ngoài ý muốn.</p>
+      <p>Vô hiệu hoá các tính năng có thể gây nhầm lẫn, hoặc không nên được sử dụng.</p>
+      <p>Ngăn chặn sử dụng một số từ mà có thể sẽ được sử dụng làm keywork.</p>
+      <p>Có thể bật Strict Mode toàn cục hoặc cục bộ tùy theo vị trí khai báo "use strict".</p>
+      <h3>Ưu điểm</h3>
+      <p>Strict Mode được tạo ra để giúp bạn tránh được một số lỗi không đáng có khi làm việc với Javascript, dễ dàng viết code Javascript an toàn hơn, cũng như giúp phong cách code của bạn trở nên mạch lạc, dễ đọc hơn.</p>
+      <h3>Hạn chế</h3>
+      <p>Một số tính năng sẽ không thể sử dụng, việc code trở nên nhiều ràng buộc</p>
+      <p>Xem ràng buộc cụ thể <a href="https://viblo.asia/p/tim-hieu-ve-strict-mode-trong-javascript-jaqG0QQevEKw">tại đây</a></p>
+    </div>
+    <div class="content">
+      <h2>Sự khác nhau giữa `==` và `===`</h2>
+      <p>Toán tử so sánh `==` sẽ chuyển đổi kiểu của toán hạng về chung một kiểu nếu như hai toán hạng có kiểu khác nhau, và bắt đầu so sánh khi đã thực hiện việc chuyển đổi xong </p>
+      <p>Ví dụ: "0" == 0  //true</p>
+      <p>Toán tử so sánh `===` trả về true nếu như toán hạng cùng loại và cùng giá trị. Nếu so sánh khác loại, kết quả sẽ false</p>
+      <p>Ví dụ: "0" === 0 //false</p>
+    </div>
+    <div class="content">
+      <p><strong>const</strong> dùng để khai báo một hằng số, thường là một giá trị không thay đổi được trong suốt quá trình chạy</p>
+      <p>Ví dụ: const X = 1;</p>
+      <p>X = 2; // Lỗi</p>
+      <p></p>
+      <p><strong>var</strong> là biến có thể sử dụng ở trong hàm và các hàm lòng nhau hoặc tạo biến toàn cục</p>
+      <p>Nếu biến var được khai báo trong một hàm, thì bạn có thể truy cập tới biến trong hàm đấy và các hàm nested nhưng không thể truy cập bên ngoài. Ví dụ:</p>
+      <p>function test() {</p>
+      <p>var x = 2;</p>
+      <p>console.log(x); // 2</p>
+      <p>function nested() {</p>
+      <p>console.log(x); // 2</p>  
+      <p>}</p>
+      <p>}</p>
+      <p>test();</p>
+      <p>console.log(x) //lỗi</p>
+      <p><strong>let</strong> là biến sử dụng ở trong 1 khối block. Khi tạo biến let trong 1 khối block thì nó chỉ có thể truy cập trong phạm vi khối block đó</p>
+      <p>let giống var là có thể cập nhập giá trị mà không cần từ khóa</p>
+      <p>Ví dụ: let x = 1; x = 2; // 2</p>
+      <p>let không thể được gán lại như var nếu dùng từ khóa</p>
+      <p>Ví dụ: let x = 1; let x = 2; // lỗi</p>
+      <p>Nhưng nếu khai báo biến let cùng tên nhưng khác block thì sẽ không lỗi</p>
+      <p>Ví dụ: let x = 1;</p>
+      <p>if(true) {</p>
+      <p>let x = 2;</p>
+      <p>console.log(x); } // 2</p>
+      <p>console.log(x); // 1</p>
+    </div>
+  </main>
+</body>
+</html>
